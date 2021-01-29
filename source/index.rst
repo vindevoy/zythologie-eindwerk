@@ -5,43 +5,54 @@
 
 
 
-.. toctree::
-  :caption: Inhoudstabel
-  :hidden:
-  :includehidden:
-  
-===================
+###################
 Eindwerk Zythologie
-===================
+###################
 
-Inhoud
-======
+.. the homepage is just the title above and the foreword and thankword below. They are not part of the menu
 
-.. toctree::
-  :caption: Inhoud
-  :hidden:
+.. only:: html
 
-  inhoud/inhoud_1.rst
-  inhoud/inhoud_2.rst
-
-
-Foodpairing
-===========
-
-.. toctree::
-  :caption: Foodpairing
-  :hidden:
-  
-  foodpairing/gerechten.rst
+  .. include:: home/voorwoord.rst
+  .. include:: home/dankwoord.rst
 
 
 
-Documentatie
-============
+.. only latex is here to avoid the titles on the home page
 
-.. toctree::
-  :caption: Documentatie
-  :hidden:
-  
-  documentatie/index.rst
+.. only:: latex
 
+  .. toctree::
+    :caption: Inhoudstabel
+    :hidden:
+    :includehidden:
+
+  Inhoud
+  ######
+
+  .. toctree::
+    :caption: Inhoud
+    :hidden:
+    :numbered:
+
+    inhoud/inhoud_1.rst
+    inhoud/inhoud_2.rst
+
+
+  Foodpairing
+  ###########
+
+  .. toctree::
+    :caption: Foodpairing
+    :hidden:
+    
+    foodpairing/gerechten.rst
+
+  Documentatie
+  ############
+
+  .. toctree::
+    :caption: Documentatie
+    :hidden:
+    
+    documentatie/bronnen.rst

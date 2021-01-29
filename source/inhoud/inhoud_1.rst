@@ -3,9 +3,9 @@
   Author: Yves Vindevogel
   Date: 2021-01-13
 
-===========
+
 Lorem Ipsum
-===========
+***********
 
 .. include:: inhoud_1_1.rst
 .. include:: inhoud_1_2.rst
