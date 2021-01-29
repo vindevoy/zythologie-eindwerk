@@ -1,7 +1,5 @@
 ..
-  Version: 1.0.0
-  Author: Yves Vindevogel
-  Date: 2021-01-13
+  Author: Auteur
 
 
 Fusce viverra odio vitae nibh venenatis faucibus

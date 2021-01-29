@@ -1,10 +1,9 @@
 ..
-  Version: 1.0.0
-  Author: Yves Vindevogel
-  Date: 2021-01-13
-
-
+  Author: Auteur
+  
 
 Bronnen
-*******
+=======
+
+Dit is de lijst met verplichte bronvermeldingen.
 

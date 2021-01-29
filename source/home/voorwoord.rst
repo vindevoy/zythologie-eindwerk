@@ -1,3 +1,7 @@
+..
+  Author: Auteur
+
+
 Voorwoord
 =========
 
