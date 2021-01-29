@@ -17,7 +17,7 @@ Introductie pagina voor het eindwerk voor de cursus Zythologie.
 .. toctree::
   :caption: Inhoud
   :numbered:
-  
+
   inhoud/inhoud_1.rst
   inhoud/inhoud_2.rst
 
