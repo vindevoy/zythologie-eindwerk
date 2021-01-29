@@ -42,11 +42,16 @@ Eindwerk Zythologie
   Foodpairing
   ###########
 
+  .. include:: foodpairing/gerechten.rst
+
   .. toctree::
     :caption: Foodpairing
     :hidden:
     
-    foodpairing/gerechten.rst
+    foodpairing/gerecht_1.rst
+    foodpairing/gerecht_2.rst
+    foodpairing/gerecht_3.rst
+    foodpairing/gerecht_4.rst
 
   Documentatie
   ############
