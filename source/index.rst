@@ -6,7 +6,7 @@
 
 
 .. toctree::
-  :caption: Print TOC
+  :caption: Inhoudstabel
   :hidden:
   :includehidden:
   
