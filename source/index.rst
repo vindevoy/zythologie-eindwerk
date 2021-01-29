@@ -4,26 +4,18 @@
    Date: 2021-01-13
 
 
+
+.. toctree::
+  :caption: Print TOC
+  :hidden:
+  :includehidden:
+  
 ===================
 Eindwerk Zythologie
 ===================
 
-Voorwoord
-=========
-
-Introductie voor het eindwerk voor de cursus Zythologie.
-
-
--- Auteur
-
-
-Dankwoord
-=========
-
-Met dank aan
-
-
-
+Inhoud
+======
 
 .. toctree::
   :caption: Inhoud
@@ -33,6 +25,9 @@ Met dank aan
   inhoud/inhoud_1.rst
   inhoud/inhoud_2.rst
 
+
+Foodpairing
+===========
 
 .. toctree::
   :caption: Foodpairing
@@ -44,8 +39,13 @@ Met dank aan
   foodpairing/gerecht_4.rst
 
 
+
+Documentatie
+============
+
 .. toctree::
   :caption: Documentatie
   :hidden:
   
   documentatie/index.rst
+
