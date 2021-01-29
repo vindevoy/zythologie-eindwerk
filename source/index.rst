@@ -19,7 +19,6 @@ Inhoud
 
 .. toctree::
   :caption: Inhoud
-  :numbered:
   :hidden:
 
   inhoud/inhoud_1.rst
@@ -33,10 +32,7 @@ Foodpairing
   :caption: Foodpairing
   :hidden:
   
-  foodpairing/gerecht_1.rst
-  foodpairing/gerecht_2.rst
-  foodpairing/gerecht_3.rst
-  foodpairing/gerecht_4.rst
+  foodpairing/gerechten.rst
 
 
 
