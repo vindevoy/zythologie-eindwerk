@@ -59,7 +59,7 @@ pdf:
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 #
-# Docker commanges
+# Docker commands
 #
 
 build: clean html
