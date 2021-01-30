@@ -42,7 +42,8 @@
   .. toctree::
     :caption: Documentatie
     :hidden:
-    
+    :titlesonly:
+        
     documentatie/bronnen.rst
     documentatie/contacten.rst
 

@@ -60,6 +60,7 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 html_show_sphinx = False
+html_copy_source = False
 
 # -- Options for Latex/PDF output --------------------------------------------
 
