@@ -4,9 +4,9 @@ Dit project kan gebruikt worden als basis voor het schrijven van het eindwerk vo
 
 **Opgelet**
 
-*Deze versie is een eerste versie en bevat nog problemen. Niets garandeert dat deze problemen allemaal opgelost zullen zijn wanneer het eindwerk afgeleverd moet worden.  Gebruiken op eigen risico.*
+*Deze versie is een eerste versie en bevat mogelijks nog problemen. Niets garandeert dat deze problemen allemaal opgelost zullen zijn wanneer het eindwerk afgeleverd moet worden.  Gebruiken op eigen risico.*
 
-*-- Yves Vindevogel, 13 januari 2021*
+*-- Yves Vindevogel, 30 januari 2021*
 
 ## Doel
 
@@ -34,23 +34,20 @@ Het aanmaken van de PDF versie is gebaseerd op LaTeX.
 
 *Op dit moment is dit project klaar voor gebruik op Linux Mint en mogelijks Ubuntu.  Windows is niet ondersteund op dit moment.*
 
+### Mac OSx
+
+De gebruikte software is allemaal open source.  Via oa. homebrew zal die waarschijnlijk allemaal te installeren zijn.  Zie de Makefile voor de nodige software.
+
 ## Gebruik
 
 - Het gebruik is op eigen risico. Dit project is pas in een beginfase.
-- De documentatie is beperkt tot wat je te weten komt via via.
+- De documentatie is beperkt tot deze readme en wat je te weten komt via via.
 - Om het kort uit te leggen:
-    - Lees de documentatie over Git.
+    - Lees de documentatie over Git.  Git dient om het project te clonen maar zorgt ook voor een backup van je werk.
     - Clone deze repo.
-    - Make een branch gebaseerd op de master voor je eigen eindwerk.  
+    - Maak een branch gebaseerd op de master voor je eigen eindwerk.
     - Als er wijzigingen zijn op dit project, zal er documentatie zijn hoe je het moet integreren in je eigen repo.
     - Lees zelf de documentatie over sphinx-doc en reStructuredText.
-
-## Gekende problemen
-
-### PDF
-
-- De TOC bij aanvang bevat de labels van de TOC voor elk onderdeel niet
-- Bij de aanvang van een hoofdstuk, wordt de titel van het hoofdstuk niet geprint
 
 ## FAQ
 
