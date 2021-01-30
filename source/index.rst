@@ -1,12 +1,17 @@
 ..
   Author: Auteur
 
-.. zythologie eindwerk master file
+.. ZYTHOLOGIE EINDWERK MASTER FILE
 
+.. Onderstaande toctree is enkel voor Latex. Die gebruikt de caption van de eerste toctree die hij tegenkomt als titel.
 
 .. toctree::
   :caption: Inhoudstabel
 
+
+.. HTML versie bevat een titel en het voor- en dankwoord op de thuispagina (home page).  Verder niets.
+.. De toctree's worden gebruikt voor het menu op te vullen.  Elke link hier, zorgt voor een HTML blad.
+.. De toctree's zijn hidden zodat ze niet op de home page getoond worden.
 
 .. only:: html
 
@@ -42,6 +47,9 @@
     documentatie/contacten.rst
 
 
+.. Dit is de PDF versie.  De eerste titel moet er zijn voor de inhoudstabel. Latex maakt die vanaf "Inhoud".
+.. Extra niveau's zijn nodig om alle inhoud in de PDF te krijgen.  Voor- en dankwoord zitten niet in een toctree.
+.. We voegen ook een niveau toe op sommige plaatsen om extra hoofdstukken te vermijden.  Die nemen een te grote titel.
 
 .. only:: latex
 
