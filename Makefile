@@ -11,6 +11,8 @@
 # from the environment for the first two.
 #
 
+SHELL=/bin/bash
+
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
@@ -57,27 +59,41 @@ pdf:
 	@$(SPHINXBUILD) -M latexpdf "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 #
+# Docker commanges
+#
+
+build: clean html
+	@docker build -t $(IMAGE_REPO)/$(IMAGE_NAME):$(IMAGE_VERSION) -f docker/Dockerfile .
+
+run:
+	@docker run -it -p 80:80 -d --name $(IMAGE_NAME) $(IMAGE_REPO)/$(IMAGE_NAME):$(IMAGE_VERSION)
+
+stop:
+	@docker stop $(IMAGE_NAME)
+
+tag: build
+	docker tag $(IMAGE_REPO)/$(IMAGE_NAME):$(IMAGE_VERSION) $(IMAGE_REPO)/$(IMAGE_NAME):latest
+
+publish: tag
+	docker push $(IMAGE_REPO)/$(IMAGE_NAME):$(IMAGE_VERSION)
+	docker push $(IMAGE_REPO)/$(IMAGE_NAME):latest
+
+remove:
+	$(eval ic=$(shell docker images | grep '$(IMAGE_REPO)/$(IMAGE_NAME)' | wc -l))
+	
+	@if [[ "$(ic)" -ne 0 ]]; then docker images | grep '$(IMAGE_REPO)/$(IMAGE_NAME)' | \
+	sed 's/  */ /g' | cut -d ' ' -f3 | xargs docker image remove --force; fi
+
+prune:
+	docker system prune -f
+
+#
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 #
 
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-
-#
-# Build the docker image
-#
-
-docker-build: clean html
-	@docker build -t $(IMAGE_REPO)/$(IMAGE_NAME):$(IMAGE_VERSION) -f docker/Dockerfile .
-
-#
-# Run the docker image
-#
-
-docker-run:
-	@docker run -it -p 80:80 -d $(IMAGE_REPO)/$(IMAGE_NAME):$(IMAGE_VERSION)
-
 
 #
 # Install packages for Linux Mint (Ubuntu ?)
